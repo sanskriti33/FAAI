@@ -1,0 +1,62 @@
+[
+  {
+    "dispatch_id": "DSP-73C8FE6B",
+    "audit_id": "AUD-20261021-51F546",
+    "vendor_name": "Titanium Machinery Spares",
+    "timestamp": "2026-10-21 17:50:44",
+    "department": "Purchasing",
+    "action_type": "PROCUREMENT_HOLD_AND_RFQ",
+    "title": "Vendor Procurement Hold & Alternate Supplier RFQ",
+    "description": "Place Titanium Machinery Spares on IMMEDIATE PROCUREMENT HOLD. Terminate pending purchase requisitions. Draft emergency Request for Quotation (RFQ-2026-ALT) to alternate supplier: Vega Precision Components.",
+    "affected_pos": [
+      "PO-1042",
+      "PO-1057"
+    ],
+    "parts": [
+      "Shaft Sleeves",
+      "Heavy Duty Flanges"
+    ],
+    "suggested_alternate": "Vega Precision Components",
+    "status": "DISPATCHED_TO_SIMULATED_OUTBOX"
+  },
+  {
+    "dispatch_id": "DSP-827508FA",
+    "audit_id": "AUD-20261021-51F546",
+    "vendor_name": "Titanium Machinery Spares",
+    "timestamp": "2026-10-21 17:50:44",
+    "department": "Quality Control",
+    "action_type": "QUARANTINE_HOLD",
+    "title": "Immediate Quarantine & Inventory Hold",
+    "description": "Place all received or transit inventory of Shaft Sleeves, Heavy Duty Flanges from Titanium Machinery Spares on immediate quality quarantine hold. Block warehouse issue slips pending Return-to-Vendor (RTV) disposal.",
+    "affected_pos": [
+      "PO-1042",
+      "PO-1057"
+    ],
+    "parts": [
+      "Shaft Sleeves",
+      "Heavy Duty Flanges"
+    ],
+    "suggested_alternate": null,
+    "status": "DISPATCHED_TO_SIMULATED_OUTBOX"
+  },
+  {
+    "dispatch_id": "DSP-F5761DC8",
+    "audit_id": "AUD-20261021-51F546",
+    "vendor_name": "Titanium Machinery Spares",
+    "timestamp": "2026-10-21 17:50:44",
+    "department": "Production Planning",
+    "action_type": "SUPPLY_DISRUPTION_ALERT",
+    "title": "Flag Open Orders & Emergency Re-routing",
+    "description": "CRITICAL ALERT: Open purchase orders (PO-1042, PO-1057) at risk for Shaft Sleeves, Heavy Duty Flanges. Freeze production line staging and transfer demand to alternate supplier: Vega Precision Components.",
+    "affected_pos": [
+      "PO-1042",
+      "PO-1057"
+    ],
+    "parts": [
+      "Shaft Sleeves",
+      "Heavy Duty Flanges"
+    ],
+    "suggested_alternate": "Vega Precision Components",
+    "status": "DISPATCHED_TO_SIMULATED_OUTBOX"
+  }
+]

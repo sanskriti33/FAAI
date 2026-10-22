@@ -1,0 +1,82 @@
+{
+  "Titanium Machinery Spares": {
+    "industry": "Heavy Industrial",
+    "financials": {
+      "revenue": 2500000,
+      "debt": 2000000,
+      "avg_delay_days": 12
+    },
+    "iso9001_expiry": "2027-06-30",
+    "gst_status": "ACTIVE",
+    "blacklisted": false,
+    "open_pos": ["PO-1042", "PO-1057"],
+    "parts_supplied": ["Shaft Sleeves", "Heavy Duty Flanges"],
+    "alternate_supplier": "Vega Precision Components",
+    "peer_median_debt_ratio": 0.45,
+    "contact_email": "procurement@titaniumspares.com"
+  },
+  "Apex Fasteners": {
+    "industry": "Precision Hardware",
+    "financials": {
+      "revenue": 1500000,
+      "debt": 450000,
+      "avg_delay_days": 8
+    },
+    "iso9001_expiry": "2027-03-31",
+    "gst_status": "ACTIVE",
+    "blacklisted": false,
+    "open_pos": ["PO-2011"],
+    "parts_supplied": ["Grade 8 Hex Bolts", "Aerospace Rivets"],
+    "alternate_supplier": "BoltMax Industries",
+    "peer_median_debt_ratio": 0.35,
+    "contact_email": "sales@apexfasteners.com"
+  },
+  "Meridian Castings": {
+    "industry": "Foundry & Castings",
+    "financials": {
+      "revenue": 1800000,
+      "debt": 990000,
+      "avg_delay_days": 38
+    },
+    "iso9001_expiry": "2026-11-08",
+    "gst_status": "ACTIVE",
+    "blacklisted": false,
+    "open_pos": ["PO-3088", "PO-3092"],
+    "parts_supplied": ["Ductile Iron Engine Blocks", "Turbine Casings"],
+    "alternate_supplier": "Sterling Castings Ltd",
+    "peer_median_debt_ratio": 0.48,
+    "contact_email": "compliance@meridiancastings.com"
+  },
+  "Orion Polymers": {
+    "industry": "Industrial Polymers",
+    "financials": {
+      "revenue": 2000000,
+      "debt": 800000,
+      "avg_delay_days": 15
+    },
+    "iso9001_expiry": "2027-09-15",
+    "gst_status": "ACTIVE",
+    "blacklisted": false,
+    "open_pos": ["PO-4050"],
+    "parts_supplied": ["High-Density Polymer Bushings", "Elastomeric Gaskets"],
+    "alternate_supplier": "SynthTech Materials",
+    "peer_median_debt_ratio": 0.42,
+    "contact_email": "security@orionpolymers.com"
+  },
+  "Kestrel Forgings": {
+    "industry": "Metal Forging",
+    "financials": {
+      "revenue": 1600000,
+      "debt": 400000,
+      "avg_delay_days": 10
+    },
+    "iso9001_expiry": "2026-08-15",
+    "gst_status": "CANCELLED",
+    "blacklisted": false,
+    "open_pos": ["PO-5012"],
+    "parts_supplied": ["Precision Forged Crankshafts"],
+    "alternate_supplier": "Apex Forgings Ltd",
+    "peer_median_debt_ratio": 0.40,
+    "contact_email": "accounts@kestrelforgings.com"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "policies": [
+    {
+      "id": "R1",
+      "name": "Financial Leverage Risk",
+      "description": "Evaluates Debt-to-Revenue ratio against enterprise financial resilience limits.",
+      "thresholds": {
+        "MED": "> 0.50",
+        "HIGH": "> 0.70"
+      },
+      "corrective_action_med": "Request debt restructuring plan; require advance credit security.",
+      "corrective_action_high": "Freeze procurement line; demand financial guarantee or substitute supplier."
+    },
+    {
+      "id": "R2",
+      "name": "Regulatory & Environmental Compliance",
+      "description": "Verifies documentary evidence for environmental, safety, or hazardous material violations and active fines.",
+      "thresholds": {
+        "HIGH": "Confirmed failed compliance, active regulatory fines, or uncured violations in audited documents."
+      },
+      "corrective_action_high": "Quarantine vendor orders; demand proof of fine clearance and regulatory remediation."
+    },
+    {
+      "id": "R3",
+      "name": "Payment Performance Risk",
+      "description": "Monitors vendor payment behavior and operational delay cycles.",
+      "thresholds": {
+        "MED": "> 30 days average delay",
+        "HIGH": "> 60 days average delay"
+      },
+      "corrective_action_med": "Enforce strict Net-30 milestones; monitor cash flow stability.",
+      "corrective_action_high": "Escalate to CFO; place vendor on cash-in-advance or alternate sourcing."
+    },
+    {
+      "id": "R4",
+      "name": "ISO Certification Validity",
+      "description": "Ensures ISO 9001 Quality Management System certificate is valid on audit date (2026-10-19).",
+      "thresholds": {
+        "MED": "Certificate expires within 30 days of audit date",
+        "HIGH": "Certificate expired on or before audit date"
+      },
+      "corrective_action_med": "Issue mandatory 30-day renewal notice and request audit schedule from registrar.",
+      "corrective_action_high": "Revoke certified vendor status; suspend quality certification sign-offs."
+    },
+    {
+      "id": "R5",
+      "name": "Statutory & Blacklist Verification",
+      "description": "Verifies active GST tax registration and confirms vendor is not present on internal blacklist.",
+      "thresholds": {
+        "HIGH": "GST status cancelled/invalid, or vendor listed on internal blacklist."
+      },
+      "corrective_action_high": "Immediate legal and tax freeze; report to statutory compliance committee."
+    },
+    {
+      "id": "R6",
+      "name": "Evidence Sufficiency & Calculation Integrity",
+      "description": "Critic independently re-computes financial ratios and verifies retrieval similarity score >= 0.20 for cited evidence.",
+      "thresholds": {
+        "FAIL": "Ratio discrepancy > 0.005 or similarity score < 0.20 when documentary evidence is cited."
+      },
+      "corrective_action_fail": "Trigger ReAct REVISE loop (max 2 attempts); escalate to human if unresolved."
+    }
+  ],
+  "decision_priority": [
+    "1. R6 Integrity Check: If failed, return REVISE (loop back to Planner, max 2). If unresolved, ESCALATE.",
+    "2. R1-R5 HIGH Severity: If any HIGH finding exists, return REJECT.",
+    "3. R1-R5 MED Severity: If MED findings exist and no HIGH, return ESCALATE for Human Review.",
+    "4. Clean Audit: If zero findings, return APPROVE."
+  ]
+}
